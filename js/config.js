@@ -167,8 +167,8 @@ const FOOTER = {
     { label: "Privacy Policy",   href: "privacy.html" },
   ],
   socials: [                                        // EDIT HERE: your social links
-    { label: "Discord",   href: SITE.discordLink },
-    { label: "YouTube",   href: "#" },
+    { label: "Discord",   href: https://discord.gg/YNkWs5SCYc },
+    { label: "YouTube",   href: https://youtube.com/@isugamingop?si=4cXflc5smT9Zk_XS },
     { label: "Instagram", href: "#" },
   ],
   copyright: "© {year} Strike Network. All rights reserved.",
