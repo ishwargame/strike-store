@@ -1,0 +1,60 @@
+<!--
+  ============================================================
+  STRIKE NETWORK STORE — store.html (Store)
+  EDITABLE BY AI - You can edit text, colors, links & packages easily
+  • Packages & categories  →  js/config.js (PACKAGES / CATEGORIES)
+  • Page text              →  js/config.js (STORE)
+  • Colors                 →  css/style.css (:root)
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store — Strike Network</title>
+  <meta name="description" content="Browse ranks, crates, coins, keys and bundles on the Strike Network Minecraft store." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tw-config.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-main text-tprimary font-body antialiased">
+
+  <!-- NAVBAR (auto-rendered by js/main.js) -->
+  <div id="site-navbar"></div>
+
+  <!-- ============ PAGE HEADER — text edited in js/config.js → STORE ============ -->
+  <section class="hero-bg hero-grid relative border-b border-borderc">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 text-center space-y-3">
+      <h1 id="store-heading" class="font-display text-4xl sm:text-5xl font-bold uppercase"></h1>
+      <p id="store-sub" class="text-tsecondary max-w-2xl mx-auto"></p>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORY TABS + PACKAGE GRID (rendered by js/store.js) ============ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-8">
+    <!-- EDIT HERE: tabs are generated from the CATEGORIES array -->
+    <div id="store-tabs" class="flex flex-wrap gap-3 justify-center"></div>
+
+    <!-- EDIT HERE: cards are generated from the PACKAGES array -->
+    <div id="store-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+
+    <div id="store-note" class="card p-5 text-center text-sm text-tsecondary"></div>
+  </section>
+
+  <!-- FOOTER (auto-rendered by js/main.js) -->
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>

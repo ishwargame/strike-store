@@ -1,0 +1,65 @@
+<!--
+  ============================================================
+  STRIKE NETWORK STORE — faq.html (FAQ)
+  EDITABLE BY AI - Questions & answers live in js/config.js → FAQS
+  Colors live in css/style.css (:root)
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Strike Network</title>
+  <meta name="description" content="Frequently asked questions about the Strike Network Minecraft store — delivery, payments, refunds and safety." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tw-config.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-main text-tprimary font-body antialiased">
+
+  <!-- NAVBAR (auto-rendered by js/main.js) -->
+  <div id="site-navbar"></div>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="hero-bg hero-grid relative border-b border-borderc">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 text-center space-y-3">
+      <h1 class="font-display text-4xl sm:text-5xl font-bold uppercase">Frequently Asked <span class="text-primary">Questions</span></h1>
+      <p class="text-tsecondary max-w-2xl mx-auto">Everything you need to know before buying on Strike Network.</p>
+    </div>
+  </section>
+
+  <!-- ============ FULL FAQ — EDIT HERE: js/config.js → FAQS ============ -->
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-12 space-y-8">
+    <div id="faq-full"></div>
+
+    <div class="card p-8 text-center space-y-4">
+      <h3 class="font-display text-2xl font-bold uppercase">Still need help?</h3>
+      <p class="text-tsecondary text-sm">Our staff reply fast on Discord — open a ticket any time, day or night.</p>
+      <a id="faq-discord" href="#" target="_blank" rel="noopener" class="btn btn-primary btn-md">Join Discord</a>
+    </div>
+  </section>
+
+  <!-- FOOTER (auto-rendered by js/main.js) -->
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // FAQ content is edited in js/config.js → FAQS
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("faq-full").innerHTML = accordion(FAQS);
+      bindAccordions(document.getElementById("faq-full"));
+      document.getElementById("faq-discord").href = SITE.discordLink;
+    });
+  </script>
+</body>
+</html>
