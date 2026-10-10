@@ -23,7 +23,7 @@ const SITE = {
   tagline: "#1 Minecraft Network",
   logo: "assets/logo.png",                            // EDIT HERE: logo image path
 
-  serverIP: "play.strikenetwork.fun",                  // EDIT HERE: your server IP
+  serverIP: "play.strikenetwork.fun Port 30658",                  // EDIT HERE: your server IP
   discordLink: "https://discord.gg/YNkWs5SCYc",    // EDIT HERE: your Discord invite
 
   currency: "₹",                                      // EDIT HERE: price symbol (₹, $, ...)
