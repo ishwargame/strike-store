@@ -1,0 +1,125 @@
+<!--
+  ============================================================
+  STRIKE NETWORK STORE — index.html (Home)
+  EDITABLE BY AI - You can edit text, colors, links & packages easily
+  • All page TEXT lives in  →  js/config.js
+  • All COLORS live in      →  css/style.css  (:root variables)
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strike Network — #1 Minecraft Network Store</title>
+  <meta name="description" content="Buy ranks, crates, coins, keys and bundles on the Strike Network Minecraft server. Instant delivery, 24/7 support." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Tailwind CDN + theme mapping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tw-config.js"></script>
+
+  <!-- Fonts: Rajdhani (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-main text-tprimary font-body antialiased">
+
+  <!-- NAVBAR (auto-rendered by js/main.js) -->
+  <div id="site-navbar"></div>
+
+  <!-- ============ HERO SECTION — text edited in js/config.js → HERO ============ -->
+  <section class="hero-bg hero-grid relative overflow-hidden">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-7 animate-rise">
+        <span id="hero-badge" class="inline-flex items-center gap-2 rounded-full border border-borderc bg-card px-4 py-1.5 text-xs font-display font-semibold uppercase tracking-widest text-primary"></span>
+        <h1 id="hero-heading" class="font-display font-bold uppercase leading-[1.05] text-4xl sm:text-5xl lg:text-6xl"></h1>
+        <p id="hero-subtext" class="text-tsecondary text-base sm:text-lg max-w-xl"></p>
+
+        <div class="flex flex-wrap gap-4">
+          <a id="hero-btn-primary" href="store.html" class="btn btn-primary btn-md">Browse Store</a>
+          <a id="hero-btn-secondary" href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-md">Join Discord</a>
+        </div>
+
+        <!-- EDIT HERE: the IP itself is set in js/config.js → SITE.serverIP -->
+        <button data-copy-ip class="ip-chip" title="Click to copy server IP">
+          <span class="text-tsecondary">IP:</span>
+          <span data-ip-text class="font-semibold"></span>
+          <span class="ip-feedback">⧉</span>
+        </button>
+      </div>
+
+      <div class="hidden lg:flex justify-center animate-float">
+        <img src="assets/logo.png" alt="Strike Network" class="glow-ring w-[380px] xl:w-[440px] rounded-3xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PACKAGES — data from js/config.js → PACKAGES (featured: true) ============ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+    <div class="flex items-end justify-between mb-10 gap-4 flex-wrap">
+      <div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase">Featured <span class="text-primary">Packages</span></h2>
+        <p class="text-tsecondary mt-2">Hand-picked best sellers, activated instantly.</p>
+      </div>
+      <a href="store.html" class="btn btn-ghost btn-sm">View Full Store →</a>
+    </div>
+    <div id="featured-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- ============ STORE CATEGORIES — data from js/config.js → CATEGORIES ============ -->
+  <section class="band border-y border-borderc">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+      <div class="text-center mb-10">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase">Store <span class="text-primary">Categories</span></h2>
+        <p class="text-tsecondary mt-2">Pick your path to power.</p>
+      </div>
+      <div id="category-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"></div>
+    </div>
+  </section>
+
+  <!-- ============ WHY BUY FROM US — data from js/config.js → WHY_US ============ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+    <div class="text-center mb-10">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase">Why Buy <span class="text-primary">From Us</span></h2>
+      <p class="text-tsecondary mt-2">Shopping on Strike Network is fast, safe and meaningful.</p>
+    </div>
+    <div id="why-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </section>
+
+  <!-- ============ FAQ PREVIEW — data from js/config.js → FAQS (first 3) ============ -->
+  <section class="band border-y border-borderc">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+      <div class="flex items-end justify-between mb-8 gap-4 flex-wrap">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase">Quick <span class="text-primary">Answers</span></h2>
+        <a href="faq.html" class="btn btn-ghost btn-sm">Read Full FAQ →</a>
+      </div>
+      <div id="faq-preview"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA SECTION — text edited in js/config.js → CTA ============ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+    <div class="card card-featured hero-bg relative overflow-hidden p-10 sm:p-14 text-center space-y-5">
+      <h2 id="cta-heading" class="font-display text-3xl sm:text-4xl font-bold uppercase"></h2>
+      <p id="cta-text" class="text-tsecondary max-w-2xl mx-auto"></p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a id="cta-primary" href="store.html" class="btn btn-primary btn-md">Visit Store</a>
+        <a id="cta-secondary" href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-md">Join Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (auto-rendered by js/main.js) -->
+  <div id="site-footer"></div>
+
+  <!-- EDIT HERE: all content comes from config.js -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
