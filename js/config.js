@@ -24,7 +24,7 @@ const SITE = {
   logo: "assets/logo.png",                            // EDIT HERE: logo image path
 
   serverIP: "play.strikenetwork.fun",                  // EDIT HERE: your server IP
-  discordLink: "discord.strikenetwork.fun",    // EDIT HERE: your Discord invite
+  discordLink: "https://discord.gg/YNkWs5SCYc",    // EDIT HERE: your Discord invite
 
   currency: "₹",                                      // EDIT HERE: price symbol (₹, $, ...)
 
@@ -167,8 +167,8 @@ const FOOTER = {
     { label: "Privacy Policy",   href: "privacy.html" },
   ],
   socials: [                                        // EDIT HERE: your social links
-    { label: "Discord",   href: https://discord.gg/YNkWs5SCYc },
-    { label: "YouTube",   href: https://youtube.com/@isugamingop?si=4cXflc5smT9Zk_XS },
+    { label: "Discord",   href: SITE.discordLink },
+    { label: "YouTube",   href: "#" },
     { label: "Instagram", href: "#" },
   ],
   copyright: "© {year} Strike Network. All rights reserved.",
