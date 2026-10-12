@@ -167,9 +167,9 @@ const FOOTER = {
     { label: "Privacy Policy",   href: "privacy.html" },
   ],
   socials: [                                        // EDIT HERE: your social links
-    { label: "Discord",   href: SITE.discordLink },
-    { label: "YouTube",   href: "#" },
-    { label: "Instagram", href: "#" },
+    { label: "Discord",   href: "https://discord.gg/YNkWs5SCYc" },
+    { label: "YouTube",   href: "https://youtube.com/@isugamingop?si=OIzGZM438RUnwBkx" },
+    { label: "Instagram", href: "https://www.instagram.com/isugaming_" },
   ],
   copyright: "© {year} Strike Network. All rights reserved.",
   disclaimer: "Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.",
